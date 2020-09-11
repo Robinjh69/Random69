@@ -1,0 +1,91 @@
+body {
+  color: white;
+  background-color: #222222;
+  text-align: center;
+  margin: 0 10%;
+}
+
+h1 {
+  color: lightblue;
+  padding: 1em 2em;
+  background-color: black;
+  margin: 1em 1em;
+  animation: infinite syre 1s alternate;
+}
+
+@keyframes syre {
+  0% {background-color: black;}
+  20% {background-color: red;}
+  40% {background-color: orange;}
+  60% {background-color: yellow;}
+  80% {background-color: green;}
+  100% {background-color: black;}
+}
+
+p {
+    /* Tisseman */
+    font-size: 25px;
+}
+
+#mainbox {
+  padding: 50px 100px;
+  background-color: #493;
+  border-radius: 3em;
+}
+
+.bluebox {
+  padding: 3em 5em;
+  background-color: lightskyblue;
+  border-radius: 2em;
+  border-color: black;
+  color: Black;
+  margin: 2em 0;
+}
+
+.rodtekst {
+  color: red;
+  font-weight: 900;
+  font-size: 2em;
+}
+
+#tittelen {
+  font-size: 50px;
+  color: blue;
+}
+
+#formDiv {
+  padding: 3em 5em;
+  background-color: rgb(227, 255, 66);
+  border-radius: 2em;
+  border-color: rgb(255, 0, 0);
+  color: Black;
+  margin: 2em 0;
+}
+
+#formDiv input[type=text] {
+  border-radius: 3px;
+  padding: 5px 8px;
+}
+
+#formDiv input[type=submit] {
+  padding: 1em 2em;
+  border-radius: 0.5em;
+  color: rgb(29, 238, 158);
+  background-color: #2c0b0b;
+  border-color: white;
+  font-size: 1.2em;
+  margin: 20px;
+}
+
+button {
+  padding: 1em 2em;
+  border-radius: 0.5em;
+  color: aliceblue;
+  background-color: #222222;
+  border-color: white;
+  font-size: 1.2em;
+}
+
+img {
+  width: 40%;
+}
