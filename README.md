@@ -22,6 +22,6 @@ runCode();
 
 [Open Me](https://www.youtube.com/watch?v=8ybW48rKBME)
 
-![Bildebeskrivelse](./Bilder/nese.jpg)
+![Bildebeskrivelse](https://raw.githubusercontent.com/Robinjh69/Random69/master/Bilder/Nese.jpg)
 
 [GitHub page](https://robinjh69.github.io/Random69/)
