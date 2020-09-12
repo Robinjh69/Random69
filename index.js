@@ -1,5 +1,5 @@
 /*********************************************************************************
-*                              Author: Author Name                               *
+*                         Author: The One and only Robin                         *
 *                              File Name: index.js                               *
 *                   Creation Date: September 12, 2020 12:48 AM                   *
 *                   Last Updated: September 12, 2020 11:39 PM                    *
@@ -115,12 +115,8 @@ function printbilde(bildeNr) {
 
 printbilde(0);
 
-
-
-
-
 /* -------------------------------------------------------------------------- */
-/*                                 Annet drit                                 */
+/*                           Get Images From Reddit                           */
 /* -------------------------------------------------------------------------- */
 
 
