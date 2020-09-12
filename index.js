@@ -1,3 +1,12 @@
+/*********************************************************************************
+*                              Author: Author Name                               *
+*                              File Name: index.js                               *
+*                   Creation Date: September 12, 2020 12:48 AM                   *
+*                   Last Updated: September 12, 2020 11:39 PM                    *
+*                          Source Language: javascript                           *
+*             Repository: https://github.com/Robinjh69/Random69.git              *
+*********************************************************************************/
+
 
 var minboks = document.getElementById("minboks");
 var knappen = document.getElementById("klikkemeg");
@@ -67,19 +76,77 @@ form.onsubmit = (event) => {
 
 }
 
+/* -------------------------------------------------------------------------- */
+/*                                 bilde ting                                 */
+/* -------------------------------------------------------------------------- */
+
+var plussbilde2 = document.getElementById("høyre");
+var minusbilde2 = document.getElementById("venstre");
+var img = document.getElementById("bildefremvisning");
+var globalBildeNr = 0;
+var bilder = [
+    "https://ih0.redbubble.net/image.468953399.0514/flat,1000x1000,075,f.jpg",
+    "./bilder/nese.jpg"
+];
+
+function plussbilde() {
+    globalBildeNr = globalBildeNr + 1;
+    if (globalBildeNr === bilder.length) {
+        globalBildeNr = 0;
+    }
+    printbilde(globalBildeNr);
+}
+
+function minusbilde() {
+    globalBildeNr = globalBildeNr - 1
+    if (globalBildeNr === -1){
+        globalBildeNr = bilder.length - 1; 
+    }
+    printbilde(globalBildeNr);
+}
+
+plussbilde2.onclick = plussbilde;
+minusbilde2.onclick = minusbilde;
+
+function printbilde(bildeNr) {
+    var bildenaa = bilder[bildeNr];
+    img.setAttribute("src", bildenaa);
+}
+
+printbilde(0);
+
+
+
+
 
 /* -------------------------------------------------------------------------- */
 /*                                 Annet drit                                 */
 /* -------------------------------------------------------------------------- */
 
-// console.log(minboks.innerHTML);
 
-// console.log(minboks.innerHTML);
+async function getImagesFromReddit() {
+    const LINK = 'https://www.reddit.com/r/pics/top.json?t=day&limit=100';
+    
+    const response = await fetch(LINK);
+    console.log('Got data from reddit');
+    
+    const data = await response.json();
+    console.log('I has converted');
+    
+    links = []
+    for (i of data.data.children) {
+        if (i.data.url != null) {
+            links.push(i.data.url);
+        }
+    }
+    return links;
+}
 
-// var test = "hei"
+async function addRedditLinksToArray(array) {
+    newLinks = await getImagesFromReddit()
+    return [...array, ...newLinks];
+}
 
-// var a = 5
-// var b = 2
-
-// console.log(a + b)
+addRedditLinksToArray(bilder)
+    .then(nyliste => bilder = nyliste);
 

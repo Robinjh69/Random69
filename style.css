@@ -89,3 +89,20 @@ button {
 img {
   width: 40%;
 }
+
+#bildeting {
+  padding: 3em 5em;
+  background-color: orangered;
+  border-radius: 2em;
+  border-color: rgb(255, 0, 0);
+  color: Black;
+  margin: 2em 0;
+  align-items: center;
+
+}
+
+#bildefremvisning {
+  height: 400px;
+  width: auto;
+  max-width: 100%;
+}
