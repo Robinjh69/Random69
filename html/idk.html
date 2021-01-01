@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+  
+    <h1 id="tittelen">Øystein er en tisseman</h1>
+    <div id="mainbox">
+        <p>
+            Paragraf: her har vi en <span class="rodtekst">rød</span> tekst.
+
+        </p>
+
+        <div class="bluebox">
+            <p><span id="minboks">Dette er min boks</span></p>
+            <button id="klikkemeg">Klikke meg</button>
+            <p id="tallboks">0</p>
+            <button id="+">+</button>
+            <button id="-">-</button>
+        </div>
+
+
+        <div id="formDiv">
+            <form id="tissemanform">
+                <label for="Navn">Navn</label><br>
+                <input type="text" id ="navn" name="Navn"><br>
+
+                <label for="tisseman">Er du en tisseman?</label><br>
+                <input type="radio" id ="Ja" name="Tisseman" value="Ja">
+                <label for="Ja">Ja</label><br>
+                <input type="radio" id ="Nei" name="Tisseman" value="Nei">
+                <label for="Nei">Nei</label><br>
+
+                <input type="submit" value="Submit">
+
+            </form>
+        </div>
+
+        <div id="bildeting">
+            <img id="bildefremvisning" src="" alt="bildefremvisning">
+            <br>
+            <button id="venstre">Forrige Bilde</button>
+            <button id="høyre">Neste bilde</button>
+            
+        </div>
+
+        <div id="bilder">
+            <img src="./Bilder/Nese.jpg" alt="Nese">
+            <img
+                src="https://ih0.redbubble.net/image.468953399.0514/flat,1000x1000,075,f.jpg"
+                alt="dickbut"
+            >
+        </div>
+    </div>
+
+    <script src="./index.js" ></script>
+
+
+</body>
+</html>
